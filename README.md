@@ -1,6 +1,6 @@
-# cucumber-bdd-google
+# cucumber-bdd-google :)
 
-Start local:
+Start local: 
 - npm install
 - npm run test:search
 
