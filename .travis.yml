@@ -27,4 +27,4 @@ after_success:
   - echo $RESULT
   
   after_script:
-  - bash ./telegram.sh
+    - bash ./telegram.sh
