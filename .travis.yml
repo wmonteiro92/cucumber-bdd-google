@@ -4,15 +4,17 @@ node_js:
 cache: npm
 
 
-# install:
-#   - npm install
+install:
+  - npm install
   
-# script:
-#   - docker pull michelleamesquita/cucumber-bdd-ci
-#   - docker run -v $PWD/:/app/report/ michelleamesquita/cucumber-bdd-ci
+script:
+  - docker pull michelleamesquita/cucumber-bdd-ci
+  - docker run -v $PWD/:/app/report/ michelleamesquita/cucumber-bdd-ci
 
 after_script:
   - bash ./telegram_notification.sh
+  - chmod +x final_report.sh
+  - . final_report.sh
   
 # after_success:
 
